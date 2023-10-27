@@ -6,7 +6,7 @@ const port = 3000;
 
 
 // connect to mongodb
-mongoose.connect("mongodb://127.0.0.1:27017/messagesApi");
+mongoose.connect(process.env.MONGODB);
 
 // console log .env MONGO DB
 console.log(process.env.MONGODB);
